@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Space Mono', monospace;
+}
+.not-found{
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 77px;
+    top: 40px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: -0.08em;
+}
+.container{
+    margin: 7rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+.image{
+    margin: 0 5rem;
+}
+.image img{
+    width: 100%;
+    min-width: 250px;
+}
+.footer{
+    color: #BDBDBD;
+    text-align: center;
+}
+.content p{
+    margin: 2.5rem 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.rem;
+    letter-spacing: -0.035em;
+    color : #4F4F4F;
+}
+button{
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+/* Adding Transparent Background Hover */
+ 
+button:hover{
+    background: transparent;
+    color: #333;
+}
+
+a{
+    color: #BDBDBD;
+    text-decoration: none;
+    
+}
+footer{
+    margin: 2rem 0 1rem;
+}
+
+@media only screen and ( min-width: 450px ){
+    footer{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+@media only screen and (max-width: 650px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        flex-direction: column;
+    }
+    footer{
+        position: absolute;
+        bottom: 10px;
+        
+    }
+    .footer p{
+        font-size: 14px;
+    }
+}
+
